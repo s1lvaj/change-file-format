@@ -1,6 +1,6 @@
-# change File Format
+# Change File Format
 
-Scripts to easily change text and image formats.
+This repository contains scripts to easily change text and image formats.
 
 ## How to Use
 
@@ -22,6 +22,12 @@ To use these scripts, make sure you have python installed and then follow these 
     https://github.com/s1lvaj/change-file-format/zipball/master
     ```
 
-3. **Run the Script**:
+3. **Install the Dependencies**:
 
-    Navigate to the project directory and run any of the scripts you want, and it'll affect your files.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Run the Script**:
+
+    Navigate to the project directory and run any of the scripts you want, and it'll affect any files inside a folder named `TOUPDATE` in your desktop, by creating a new folder named `UPDATED`, with the new files.
