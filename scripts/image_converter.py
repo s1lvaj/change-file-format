@@ -21,8 +21,8 @@ def convert_images(
     :param new_type: String with the new type of image to convert to.
     :param input_folder: Path to folder with images to be converted.
     :param output_folder: Path to folder where new images will be saved.
-    :param max_width: Maximum width for new images (1280 is a good standard).
-    :param max_height: Maximum height for new images (720 is a good standard).
+    :param max_width: Maximum width for new images (1280x720 or 1920x1080 are good standards).
+    :param max_height: Maximum height for new images (1280x720 or 1920x1080 are good standards).
     :param quality: Quality of the new images (30-60 is a good range for photos, like 55).
     """
     
@@ -77,6 +77,5 @@ if __name__ == '__main__':
     INPUT_FOLDER = os.path.join(DESKTOP, 'TOUPDATE')
     OUTPUT_FOLDER = os.path.join(DESKTOP, 'UPDATED')
 
-    convert_images('webp', INPUT_FOLDER, OUTPUT_FOLDER, max_width=1280, max_height=720)
-    
+    convert_images('webp', INPUT_FOLDER, OUTPUT_FOLDER, max_width=1920, max_height=1080)
     print("Done converting all image files.")
