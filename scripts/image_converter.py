@@ -29,7 +29,7 @@ def convert_images(
     os.makedirs(output_folder, exist_ok=True)
 
     for file in os.listdir(input_folder):
-        if not (file.lower().endswith(".jpg") or file.lower().endswith(".jpeg") or file.lower().endswith(".png")):
+        if not (file.lower().endswith(".jpg") or file.lower().endswith(".jpeg") or file.lower().endswith(".png") or file.lower().endswith(".webp")):
             continue
 
         input_path = os.path.join(input_folder, file)
